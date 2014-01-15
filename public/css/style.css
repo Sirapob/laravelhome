@@ -1,0 +1,20 @@
+body{
+	margin: 0;
+	background: snow;
+}
+header{
+	color: snow;
+	background: #ff9f96;
+	border-bottom: 3px double #ff422f;
+	padding: 15px;
+	font-size: 2em;
+	text-align: center;
+}
+.container{
+	margin: 40px;
+}
+#content{
+	background: #ffffff;
+	border: 1px solid gray;
+	padding: 20px;
+}
