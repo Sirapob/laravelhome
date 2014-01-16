@@ -18,7 +18,14 @@
 		public function inputOnly()
 		{
 			$input = Input::only('name');
-			return View::make('exam_input.inputOnly')->with('input',$input);
+			return View::make('exam_input.inputOnly')
+					->with('input',$input);
+		}
+		public function inputExcept()
+		{
+			$input = Input::except('name');
+			return View::make('exam_input.inputExcept')
+					->with('input',$input);
 		}
 	}
 	

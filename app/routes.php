@@ -31,3 +31,6 @@ Route::any('inputGet','ExamInputController@inputGet');
 Route::any('inputAll','ExamInputController@inputAll');
 Route::any('inputOnly','ExamInputController@inputOnly');
 Route::get('sessionPut','ExamSessionController@sessionPut');
+Route::any('inputExcept','ExamInputController@inputExcept');
+Route::get('sessionPush','ExamSessionController@sessionPush');
+Route::get('sessionAll','ExamSessionController@sessionAll');
