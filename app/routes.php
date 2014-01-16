@@ -17,7 +17,7 @@ Route::get('/', function()
 });
 Route::get('/hello', function()
 {
-	return '<h1>Hello World 555</h1>';
+	return '<h1>Hello World 555666</h1>';
 });
 //การใช้งาน File Input
 Route::get('myFilefield','ExamFormController@myFilefield');
