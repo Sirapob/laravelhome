@@ -10,7 +10,7 @@ class ExamSessionController extends BaseController{
 		return View::make('exam_session.sessionPut');
 	}
 	public function sessionPush(){
-		Session::push('myTime', date('H:i:s'));
+		Session::push('myTime', 'test');
 		return View::make('exam_session.sessionPush');
 	}
 	public function sessionAll(){
