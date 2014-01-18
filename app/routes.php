@@ -34,3 +34,4 @@ Route::get('sessionPut','ExamSessionController@sessionPut');
 Route::any('inputExcept','ExamInputController@inputExcept');
 Route::get('sessionPush','ExamSessionController@sessionPush');
 Route::get('sessionAll','ExamSessionController@sessionAll');
+Route::get('sessionForget','ExamSessionController@sessionForget');
