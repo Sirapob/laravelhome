@@ -17,6 +17,11 @@ class ExamSessionController extends BaseController{
 		
 		return View::make('exam_session.sessionAll');
 	}
+	public function sessionForget(){
+		
+		Session::forget('myName');
+		return View::make('exam_session.sessionForget');
+	}
 }
 
 
