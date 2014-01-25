@@ -22,6 +22,11 @@ class ExamSessionController extends BaseController{
 		Session::forget('myName');
 		return View::make('exam_session.sessionForget');
 	}
+	public function sessionFlush(){
+		
+		Session::flush();
+		return View::make('exam_session.sessionFlush');
+	}
 }
 
 
