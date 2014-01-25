@@ -53,3 +53,7 @@ Route::any('update/{id}','ExamModelController@update');
 Route::get('delete/{id}','ExamModelController@delete');
 
 Route::get('myPagination','ExamModelController@myPagination');
+
+Route::get('dbSelect','ExamModelController@dbSelect');
+
+Route::any('basicValidate','TestValidationController@basicValidate');
