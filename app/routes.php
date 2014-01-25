@@ -36,3 +36,20 @@ Route::get('sessionPush','ExamSessionController@sessionPush');
 Route::get('sessionAll','ExamSessionController@sessionAll');
 Route::get('sessionForget','ExamSessionController@sessionForget');
 Route::get('sessionFlush','ExamSessionController@sessionFlush');
+Route::get('cookieForever','ExamCookieController@cookieForever');
+
+Route::get('testBelongsTo',function(){
+	$model = Book::all();
+	return View::make('test_relation.belongsTo')->with('model',$model);
+});
+Route::get('testHasMany',function(){
+	$model = Category::all();
+	return View::make('test_relation.hasMany')->with('model',$model);
+});
+
+Route::any('create','ExamModelController@create');
+Route::get('read','ExamModelController@read');
+Route::any('update/{id}','ExamModelController@update');
+Route::get('delete/{id}','ExamModelController@delete');
+
+Route::get('myPagination','ExamModelController@myPagination');
