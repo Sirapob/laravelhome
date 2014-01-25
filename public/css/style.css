@@ -18,3 +18,7 @@ header{
 	border: 1px solid gray;
 	padding: 20px;
 }
+.pagination li{
+	margin:0 5px 0 5px;
+	display:inline;
+}
